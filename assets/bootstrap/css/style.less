@@ -1,0 +1,106 @@
+/*Variable And Function CSS*/
+@base_bg: #fff;
+
+/*THIS HELPER*/
+.cl{
+	clear:both;
+}
+textarea{
+	resize:none;
+}
+[hidden]{
+	position:absolute;
+	visibility:hidden;
+}
+/*THIS LOAD*/
+.content{
+	margin:0px 0px 0px 350px;
+	height:100%;
+}
+.menukiri{
+	background:@base_bg;
+	position:fixed;
+	float:left;
+	width:350px;
+	height:100%;
+	box-shadow:3px 0px 5px -5px #000;
+	overflow-y:auto;
+	-moz-transition:0.2s;
+	-webkit-transition:0.2s;
+	-o-transition:0.2s;
+}
+.nav{
+	margin-bottom:0px;
+	border-radius:3px 3px 0px 0px;
+}
+.ipreview{
+	border:none;
+	height:580px;
+	overflow-y:auto;
+}
+.editor{
+	height:400px;
+	overflow:hidden;
+}
+.editor .CodeMirror{
+	width:100%;
+	height:400px;
+	box-shadow:0px 0px 5px;
+	overflow-x:hidden;
+}
+img{
+	border-radius:3px;
+	border:1px solid #ccc;
+}
+
+/*Helper*/
+.nf{
+	padding:4px 10px;
+	display:inline-block;
+	margin:0px;
+}
+[pointer]{
+	cursor:pointer;
+}
+/*THIS CHECK*/
+#cZoom-editor:checked ~ .menukiri{
+	width:100% !important;
+}
+#cZoom-editor:checked ~ .menukiri #saveEditor .icon-zoom-in{
+	background-position: -360px 0 !important;
+}
+/*Media Resposive*/
+@media (max-width:767px){
+	.content{
+		margin:10px 0px !important;
+		width: 100%;
+		float:none;
+	}
+	.menukiri{
+		position:relative !important;
+		width: 100% !important;
+		height:auto !important;
+		float:none !important;
+		box-shadow:0px 3px 5px -5px #000 !important;
+	}.menu{
+		height:0px;
+		overflow:hidden;
+	}
+}
+@media (max-width:979px){
+	.nf{
+		margin:10px 0px 0px;
+	}
+}
+@media (min-width:767px){
+	.menu{
+		height:auto !important;
+		overflow:visible;
+	}
+}
+@media (min-width:979px){
+	.menu{
+		height:auto !important;
+		overflow:visible;
+	}
+}

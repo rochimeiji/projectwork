@@ -1,0 +1,196 @@
+/*Variable And Function CSS*/
+@base_bg: #fff;
+
+/*THIS HELPER*/
+.cl{
+	clear:both;
+}
+textarea{
+	resize:none;
+}
+[hidden]{
+	position:absolute;
+	visibility:hidden;
+}
+/*THIS LOAD*/
+.thumbnail .foto{
+	margin:5px 10px 0px 0px;
+	width:20px;
+	height:20px;
+	float:left
+}
+.content{
+	margin:0px 0px 0px 350px;
+	height:100%;
+}
+.menukiri{
+	background:#fff;
+	position:fixed;
+	z-index:200;
+	float:left;
+	width:350px;
+	height:100%;
+	box-shadow:3px 0px 5px -5px #000;
+	overflow-y:auto;
+	-moz-transition:0.2s;
+	-webkit-transition:0.2s;
+	-o-transition:0.2s;
+}
+.nav{
+	margin-bottom:0px;
+	border-radius:3px 3px 0px 0px;
+}
+.ipreview{
+	border:none;
+	height:580px;
+	overflow-y:auto;
+}
+.editor{
+	height:400px;
+	overflow:hidden;
+}
+.editor .CodeMirror{
+	width:100%;
+	height:400px;
+	box-shadow:0px 0px 5px;
+	overflow-x:hidden;
+}
+img{
+	border-radius:3px;
+	border:1px solid #ccc;
+}
+.thumb-forum{
+	margin:10px 0px;
+}
+.forum-status{
+	float:left;
+	width:100px;
+}
+.forum-content{
+	margin-left:120px;
+}
+.comment-html{
+	width:300px;
+	margin-left:-370px;
+	box-shadow:3px 0px 5px -5px #000;
+}
+/*Sampul*/
+.sampul{
+	position:relative;
+	height:300px;
+}
+.sampul .foto{
+	border-radius:0px;
+	border:0px;
+	width:100%;
+	height:100%;
+}
+.sampul-content{
+	position:absolute;
+	bottom:-70px;
+	left:50px;
+	width:500px;
+}
+.sampul-content .foto{
+	float:left;
+	margin-right:10px;
+	width:150px;
+	height:150px;
+}
+.sampul-content .status{
+	margin-top:100px;
+}
+.uSampul{
+	position:absolute;
+	right:10px;
+	bottom:10px;
+	width:180px;
+}
+.foto-sampul-form{
+	width:300px;
+	height:100px;
+}
+/*paging*/
+.paging{
+	text-align:center;
+}
+/*Helper*/
+.nf{
+	padding:4px 10px;
+	display:inline-block;
+	margin:0px;
+}
+.text-content{
+	padding:10px;
+}
+[pointer]{
+	cursor:pointer;
+}
+/*THIS CHECK*/
+#cZoom-editor:checked ~ .menukiri{
+	width:100% !important;
+}
+#cZoom-editor:checked ~ .menukiri #saveEditor .icon-zoom-in{
+	background-position: -360px 0 !important;
+}
+#cComment:checked ~ .menukiri{
+	margin-left:400px;
+}
+#cZoom-editor:checked ~ #cComment:checked ~ .menukiri{
+	width:70% !important;
+}
+.comment-html{
+	background:#fff;
+	position:fixed;
+	z-index:300;
+	float:left;
+	width:400px;
+	height:100%;
+	box-shadow:3px 0px 5px -5px #000;
+	overflow-y:auto;
+	margin-left:-420px;
+	-moz-transition:0.2s;
+	-webkit-transition:0.2s;
+	-o-transition:0.2s;
+}
+#cComment:checked ~ .comment-html{
+	margin-left:0px;
+}
+#cComment:checked ~ .menukiri i.icon-comment{
+	background-position:-433px -96px;
+}
+/*Media Resposive*/
+@media (max-width:767px){
+	.content{
+		margin:10px 0px !important;
+		width: 100%;
+		float:none;
+	}
+	.menukiri{
+		position:relative !important;
+		width: 100% !important;
+		height:auto !important;
+		float:none !important;
+		box-shadow:0px 3px 5px -5px #000 !important;
+	}.menu{
+		height:0px;
+		overflow:hidden;
+	}
+}
+@media (max-width:979px){
+	.nf{
+		margin:10px 0px 0px;
+	}
+}
+@media (min-width:767px){
+	.menu{
+		height:auto !important;
+		overflow:visible;
+	}
+}
+@media (min-width:979px){
+	.menu{
+		height:auto !important;
+		overflow:visible;
+	}
+}
